@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Restaurants_Fragments.FollowRegister_Fragment">
+    <!--<Button-->
+    <!--android:id="@+id/categoriesbutton"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#f4a8a8"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_height="wrap_content" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_edittext"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layoutDirection="rtl"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/minimumcharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/minimumorder"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/deliverycost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/arrivalmonyis"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/deliveryperiod"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/deliveryperiod"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textSize="15sp" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/availability" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/arrivaldata"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_edittext"
+            android:hint="@string/phonenumber"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/watsapp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_edittext"
+            android:hint="@string/watsappp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/restaurantphoto"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/restaurantphoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:background="#e7e6e6"
+            android:src="@mipmap/productphoto" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#46b35a"
+        android:text="@string/signinbtn"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+</LinearLayout>

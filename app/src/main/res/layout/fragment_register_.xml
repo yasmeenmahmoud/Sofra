@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Register_Fragment">
+
+    <EditText
+        android:id="@+id/r_name"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/name"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/r_email"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/email"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/r_phone"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/phone"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/cityspinner"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layoutDirection="rtl"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/reginspinner"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layoutDirection="rtl"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/r_password"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingRight="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/r_confirmpassword"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/confirmpassword"
+        android:paddingRight="10dp"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#46b35a"
+        android:text="@string/next"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/folow"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#46b35a"
+        android:text="@string/follow"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+</LinearLayout>

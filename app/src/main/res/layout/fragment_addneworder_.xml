@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Client_Fragments.AddNewOrder_Fragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/addnotes"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addnotes"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:padding="6dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/orderaddress"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myaddress"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingRight="10dp"
+        android:text="@string/payment"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiopayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cashpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:buttonTint="#F1C40F"
+            android:text="@string/cashorder" />
+
+        <RadioButton
+            android:id="@+id/networkpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F1C40F"
+            android:text="@string/networkorder" />
+
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tablayout_drawable"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridview_graydrawable">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:text="المجموع :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mysum"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:textStyle="bold"
+                android:text="40 ريال "
+               />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridview_graydrawable">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:text="رسوم التوصيل :"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/mydeliverycost"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:textStyle="bold"
+                android:text="10 ريال " />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d6d3d3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:text="المبلغ الاجمالى  :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mytotalsum"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="15dip"
+                android:textStyle="bold"
+                android:text="20 ريال " />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_addneworder"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#F1C40F"
+        android:paddingRight="3dp"
+        android:text="اتمام الشراء"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+</LinearLayout>

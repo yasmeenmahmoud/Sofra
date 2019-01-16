@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/gridview_graydrawable"
+    android:layoutDirection="rtl"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp">
+
+
+    <ImageView
+        android:id="@+id/notificationicon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/notificationsmall" />
+
+    <TextView
+        android:id="@+id/notificaiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/notificationicon"
+        android:text="@string/notificationtitle"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notificaiondate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificaiontitle"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/notificationicon"
+        android:drawableRight="@mipmap/noti_dateicon"
+        android:drawablePadding="4dp"
+        android:text="@string/notificationdate"
+        android:textSize="16sp" />
+</RelativeLayout>

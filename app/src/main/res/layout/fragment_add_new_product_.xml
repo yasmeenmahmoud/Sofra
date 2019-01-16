@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".Restaurants_Fragments.AddNewProduct_Fragment">
+
+    <EditText
+        android:id="@+id/productname"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/productname"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/productdetails"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/productdescribe"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/productprice"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/productprice"
+        android:paddingRight="10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/productpreparingtime"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_edittext"
+        android:hint="@string/producttime"
+        android:paddingRight="10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textSize="15sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/addproductphoto"
+        android:paddingRight="10dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/productimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#e7e6e6"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/productphoto"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/addproduct"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#46b35a"
+        android:text="@string/add"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

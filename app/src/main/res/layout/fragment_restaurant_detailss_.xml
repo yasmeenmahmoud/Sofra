@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gridview_drawable"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/H_imageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/eat" />
+
+        <TextView
+            android:id="@+id/H_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/H_text2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:text=""
+            android:textSize="10sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text2"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="1"
+            android:progressDrawable="@mipmap/ratingbarsmall"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/H_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@mipmap/opennowiconsmall"
+            android:drawablePadding="3dp"
+            android:text=""
+            android:textColor="#5cb95d"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/H_minimumchargetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text3"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/H_text4"
+            android:text="@string/minimumchargetext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/H_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:text=""
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/H_deliverycosttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text4"
+            android:layout_toRightOf="@id/H_text5"
+            android:text="@string/deliverycosttext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/H_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="5dp"
+            android:text="60 ريال"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabSelectedTextColor="#000"
+
+        app:tabTextColor="#000">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قائمة الطعام" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التعليقات والتقييم" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="معلومات المتجر" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

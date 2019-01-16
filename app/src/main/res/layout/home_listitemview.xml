@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridview_drawable"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/H_imageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/eat" />
+
+        <TextView
+            android:id="@+id/H_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:text="restaurant name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/H_text2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:text="برجر مشويات مشروبات"
+            android:textSize="10sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text2"
+            android:layout_toLeftOf="@id/H_imageview"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="1"
+            android:progressDrawable="@mipmap/ratingbarsmall"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/H_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@mipmap/opennowiconsmall"
+            android:drawablePadding="3dp"
+            android:text=""
+            android:textColor="#5cb95d"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/H_minimumchargetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text3"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/H_text4"
+            android:text="@string/minimumchargetext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/H_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:text="20.00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/H_deliverycosttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text4"
+            android:layout_toRightOf="@id/H_text5"
+            android:text="@string/deliverycosttext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/H_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/H_text4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="5dp"
+            android:text="60 ريال"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

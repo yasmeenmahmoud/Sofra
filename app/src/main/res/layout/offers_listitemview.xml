@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridview_drawable"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/offermealimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/eat" />
+
+        <TextView
+            android:id="@+id/offertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/offermealimage"
+            android:text="@string/offertitle"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurantoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offertitle"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/offermealimage"
+            android:text="@string/restaurantoffer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantoffer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/offermealimage"
+            android:text="@string/from"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantoffer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/from"
+            android:text=""
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantoffer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/offertime"
+            android:text="@string/to"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantoffer"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/to"
+            android:text=""
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/offerpricetext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/offermealimage"
+            android:text="@string/offerprice"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/offerprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/offerpricetext"
+            android:text=""
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

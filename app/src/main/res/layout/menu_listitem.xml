@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gridview_drawable"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/M_mealimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/eat" />
+
+
+        <TextView
+            android:id="@+id/M_mealname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/M_mealimage"
+            android:text="ساندوتش برجر تركى "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/M_mealdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/M_mealname"
+            android:layout_toLeftOf="@id/M_mealimage"
+            android:text="ساندوتش راب برجر محشى بقطع"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/M_mealdetails2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/M_mealdetail"
+            android:layout_toLeftOf="@id/M_mealimage"
+            android:text="الدجاج الحار المتبله"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/M_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="السعر"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/M_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/M_price_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text=" 20 ريال"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Restaurants_Fragments.OurOffers_Fragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ouroffersrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+         />
+    <Button
+        android:id="@+id/addnewoffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addnewoffer"
+        android:textSize="18sp"
+        android:background="#666563"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:gravity="center"
+        android:drawablePadding="3dp"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@mipmap/addnewproducticon"
+        android:textColor="#fff"/>
+</RelativeLayout>

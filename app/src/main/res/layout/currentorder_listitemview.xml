@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gridview_drawable"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/O_mealimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/O_theordernamr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/O_mealimage"
+        android:text="تاج الفطيره الدمشقى "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/O_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_theordernamr"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/O_mealimage"
+        android:text="@string/pricetext"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/O_orderdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_theordernamr"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/O_price"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/O_delivertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_price"
+        android:layout_toLeftOf="@id/O_mealimage"
+        android:text="@string/deliverycost"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/O_quentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_orderdetail"
+        android:layout_marginRight="5dp"
+
+        android:layout_toLeftOf="@id/O_delivertext"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/O_total_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_delivertext"
+        android:layout_toLeftOf="@id/O_mealimage"
+        android:text="@string/total"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/O_price_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/O_quentity"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/O_total_"
+
+        android:text="  "
+        android:textSize="12sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/O_ordernumbertext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toLeftOf="@id/O_theordernamr"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_marginRight="100dp"-->
+        <!--android:text="@string/ordernumbertrxt"-->
+        <!--android:textColor="#f9cf7c"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/O_ordernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="140dp"
+        android:text=" gdhghjjhh "
+        android:textColor="#f9cf7c"
+        android:textSize="13sp"
+        android:layout_toLeftOf="@id/O_theordernamr"
+        android:textStyle="bold" />
+</RelativeLayout>
+</android.support.v7.widget.CardView>

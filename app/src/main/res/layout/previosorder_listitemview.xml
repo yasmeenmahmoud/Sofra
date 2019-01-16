@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridview_drawable"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/p_orderimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/p_ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/p_orderimage"
+            android:text="تاج الفطيره الدمشقى "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p_orderdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_ordername"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/p_orderimage"
+            android:text="@string/pricetext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/p_quentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_ordername"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/p_orderdetails"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/p_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_orderdetails"
+            android:layout_toLeftOf="@id/p_orderimage"
+            android:text="@string/deliverycost"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/O_quentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_quentity"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/p_price"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/O_total_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_price"
+            android:layout_toLeftOf="@id/p_orderimage"
+            android:text="@string/total"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/O_price_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/O_quentity"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/O_total_"
+            android:text="  "
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/O_ordernumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="120dp"
+            android:layout_toLeftOf="@id/p_ordername"
+            android:text="@string/ordernumbertrxt"
+            android:textColor="#f9cf7c"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p_ordernumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/O_ordernumbertext"
+            android:paddingRight="5dp"
+            android:text="  "
+            android:textColor="#f9cf7c"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/excute"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/O_ordernumbertext"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/refuse"
+            android:background="#67bf73"
+            android:drawableRight="@mipmap/excute_icon"
+            android:onClick="removeFrommyOrder"
+            android:text="@string/excuteordersuccesfully"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/refuse"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/O_ordernumbertext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:background="#e16060"
+            android:drawableRight="@mipmap/refuseicon"
+            android:text="@string/refuse"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

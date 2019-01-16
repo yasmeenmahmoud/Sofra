@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ourhomeicon"
+            android:icon="@mipmap/homeicon"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/ourordersicon"
+            android:icon="@mipmap/ordersicon"
+            android:title="@string/ourorders" />
+        <item
+            android:id="@+id/ourorderpresentedicon"
+            android:icon="@mipmap/conditionsicon"
+            android:title="@string/orderpresented" />
+        <item
+            android:id="@+id/ournotificationicon"
+            android:icon="@mipmap/notificationicon"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/monyicon"
+            android:icon="@mipmap/moneyicon"
+            android:title="@string/money" />
+        <item
+            android:id="@+id/oourffersicon"
+            android:icon="@mipmap/offersicon"
+            android:title="@string/ouroffers" />
+        <item
+            android:id="@+id/ourabouticon"
+            android:icon="@mipmap/abouticon"
+            android:title="@string/aboutapp" />
+
+        <item
+            android:id="@+id/ourshareicon"
+            android:icon="@mipmap/shareicon"
+            android:title="@string/shareapp" />
+
+        <item
+            android:id="@+id/ourcallusicon"
+            android:icon="@mipmap/callusicon"
+            android:title="@string/callus" />
+    </group>
+
+</menu>

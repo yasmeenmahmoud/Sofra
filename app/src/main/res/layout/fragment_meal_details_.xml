@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealdetailscontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Client_Fragments.MealDetails_Fragment">
+
+
+    <ImageView
+        android:id="@+id/M_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/eat" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/M_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:text="ساندوتش برجر تركى"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/M_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 ريال "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#d9d7d7" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text="مدة تجهيز الطلب: "
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/M_preparingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text=" "
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#d9d7d7" />
+
+    <TextView
+        android:id="@+id/descreption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/specialorder"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/getdescreption"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custemedititext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/quientity"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:background="#67bf73"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/myorder_edt"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custemedititext"
+            android:gravity="center"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/minusbutton"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:background="#67bf73"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addtobasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:drawableRight="@mipmap/bag"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="@string/addtobasket"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.dell.sofra"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+            debug {
+                testCoverageEnabled = false
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0-rc1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //multiselected spinner
+    implementation'com.thomashaertel:multispinner:0.1.1@aar'
+
+//ButterKnife Dependency
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //ButterKnife Dependency
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Retrofit Dependenciesciri
+//    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //Circle Image View
+   // implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Transparent statusBar
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    implementation 'com.yanzhenjie:album:2.1.1'
+
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+//    implementation 'com.jakewharton:butterknife:9.0.0-rc2'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc2'
+//
+//    implementation 'com.android.support:multidex:1.0.3'
+}

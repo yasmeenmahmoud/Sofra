@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Client_Fragments.Playstore_Fragment">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tablayout_drawable"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="الحاله"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:gravity="right"
+                android:padding="15dip" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:gravity="right"
+                android:padding="15dip"
+                android:text="مفتوح"
+                android:textColor="#7fc789" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="المدينه"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P_city"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="الرياض" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/cityspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="الحى"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P_region"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="الروضه" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regionspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="الحد الادنى "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P_minimumcharge"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="50 ريال" />
+
+            <EditText
+                android:id="@+id/edt_minimumcharge"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="50 ريال"
+                android:textColor="#636262"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="رسوم التوصيل "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P_deliverycost"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="10 ريال " />
+
+            <EditText
+                android:id="@+id/edt_deliverycost"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/tablayout_drawable"
+                android:padding="15dip"
+                android:text="10 ريال "
+                android:textColor="#636262"
+                android:textSize="14dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:background="#46b35a"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+</LinearLayout>
